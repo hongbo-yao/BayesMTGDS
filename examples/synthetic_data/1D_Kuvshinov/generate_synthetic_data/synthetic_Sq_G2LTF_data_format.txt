@@ -1,0 +1,13 @@
+Station name   : synthetic_Sq_G2LTF
+GG longitude   : 249.167
+GG latitude    : 32.077
+GM longitude   : 9999.000
+GM latitude    : 9999.000
+Number of data : 6
+# TF_type  period_id    period       n     m         real           imag         std_err
+   SqG2L       1    14400.000000     7     6       1.465306       1.299655       0.060163
+   SqG2L       2    17280.000000     6     5      -1.666894       0.893029       0.054994
+   SqG2L       3    21600.000000     5     4      -0.214823      -1.559595       0.047906
+   SqG2L       4    28800.000000     4     3       1.271397       0.286461       0.038933
+   SqG2L       5    43200.000000     3     2      -0.516946       0.776222       0.028377
+   SqG2L       6    86400.000000     2     1      -0.298451      -0.432641       0.017056
