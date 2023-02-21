@@ -13,13 +13,13 @@ BayesMTGDS is a standalone C++ code for trans-dimensional Bayesian joint inversi
 ### Reference
 The background theory is described in:
 
-- Hongbo Yao, Zhengyong Ren*, Jingtian Tang, Rongwen Guo, Jiayong Yan. Trans-dimensional Bayesian joint inversion of magnetotelluric and geomagnetic depth sounding responses to constrain mantle electrical discontinuities. Geophysical Journal International, 2023, accepted
+- Hongbo Yao, Zhengyong Ren*, Jingtian Tang, Rongwen Guo, Jiayong Yan. Trans-dimensional Bayesian joint inversion of magnetotelluric and geomagnetic depth sounding responses to constrain mantle electrical discontinuities. Geophysical Journal International, 2023, 233(3), 1821-1846. https://doi.org/10.1093/gji/ggad029
 
 If this helps you, a citation to our paper is appreciated.
 
 ### Authors
 
-- Hongbo Yao, Central South University, Email: yaohongbo@csu.edu.cn
+- Hongbo Yao, Central South University, Email: yaohongbo@csu.edu.cn, https://www.researchgate.net/profile/Hongbo-Yao-2
 
 - Zhengyong Ren, Central South University, Email: renzhengyong@csu.edu.cn
 
