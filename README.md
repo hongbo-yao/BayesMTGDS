@@ -17,11 +17,9 @@ The background theory is described in:
 
 If this helps you, a citation to our paper is appreciated.
 
-### Authors
+### Contact
 
-- Hongbo Yao, Central South University, Email: yaohongbo@csu.edu.cn, https://www.researchgate.net/profile/Hongbo-Yao-2
-
-- Zhengyong Ren, Central South University, Email: renzhengyong@csu.edu.cn
+- Hongbo Yao, Email: hongbo.yao@outlook.com, https://www.researchgate.net/profile/Hongbo-Yao-2
 
 ### Usage
 Install MPI and type 'make' to compile the source code. Then please see /examples for details.
