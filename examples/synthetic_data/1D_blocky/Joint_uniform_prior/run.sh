@@ -1,4 +1,4 @@
-mpirun -np 6 ../../../BayesMTGDS setup.config | tee BayesMTGDS.log
+mpirun -np 6 ../../../../BayesMTGDS setup.config | tee BayesMTGDS.log
 
 python plot_rms.py
 

@@ -2000,33 +2000,24 @@ void RJMCMC::save_results(std::vector<int> k_samples,
    }
 
    // Median model with lower depth resolution
-   std::vector<double> median_model_final(n_depth_blocks_coarse); 
+   std::vector<double> mean_model_final(n_depth_blocks_coarse); 
    for (int i=0; i<n_depth_blocks_coarse; i++)
    {
       std::vector<double> sigma_vector = sigma_vector_of_each_depth_coarse[i];
       std::sort(sigma_vector.begin(), sigma_vector.end());
       int size = sigma_vector.size();
-      if (size%2 == 0)
-      {
-         int loc = size/2;
-         median_model_final[i] = (sigma_vector[loc]+sigma_vector[loc-1])/2.0;
-      }
-      else
-      {
-         int loc = (size-1)/2;
-         median_model_final[i] = sigma_vector[loc];
-      }
+      mean_model_final[i] = std::accumulate(sigma_vector.begin(), sigma_vector.end(), 0.0)/(double)size;
    }
 
    // Save final model
-   std::string median_stream_coarse_filename = output_dir + "/median_model_final.dat";
-   std::ofstream median_stream_final(median_stream_coarse_filename);
-   median_stream_final.setf(std::ios::scientific);
+   std::string median_stream_coarse_filename = output_dir + "/mean_model_final.dat";
+   std::ofstream mean_stream_final(median_stream_coarse_filename);
+   mean_stream_final.setf(std::ios::scientific);
    for (int i=0; i<n_depth_blocks_coarse; i++)
    {
-      median_stream_final << std::setw(16) << depth_linspace_coarse[i] 
-                          << std::setw(16) << std::pow(10,median_model_final[i]) << "\n";
+      mean_stream_final << std::setw(16) << depth_linspace_coarse[i]/1000
+                        << std::setw(16) << std::pow(10,mean_model_final[i]) << "\n";
    }
-   median_stream_final << std::setw(16) << z_cmb << std::setw(16) << sigma_core << "\n";
-   median_stream_final.close();
+   mean_stream_final << std::setw(16) << z_cmb << std::setw(16) << sigma_core << "\n";
+   mean_stream_final.close();
 }
